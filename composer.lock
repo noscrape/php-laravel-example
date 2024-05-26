@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03a396f83199f525dc394c202f07b400",
+    "content-hash": "c9d018a1791a2dfb9d988fbcfb6b376b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2147,6 +2147,45 @@
             "time": "2024-03-05T20:51:40+00:00"
         },
         {
+            "name": "noscrape/noscrape",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noscrape/noscrape-php.git",
+                "reference": "6349a550b30b542e8b9c9b14a423d8051471fb71"
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Noscrape\\Noscrape\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Noscrape\\Noscrape\\Test\\": "test/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schönberger",
+                    "email": "mail@schoenberger.be"
+                }
+            ],
+            "description": "Description of your package",
+            "time": "2024-05-26T20:52:26+00:00"
+        },
+        {
             "name": "opis/closure",
             "version": "3.6.3",
             "source": {
@@ -2996,61 +3035,6 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
-        },
-        {
-            "name": "schoenbergerb/noscrape",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/noscrape/noscrape-php.git",
-                "reference": "3452a93804b20df415fd3b5feeeeb5cdce72b346"
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-mbstring": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^11.1"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "binaries": [
-                    {
-                        "from": "bin/binary_linux",
-                        "to": "binary"
-                    },
-                    {
-                        "from": "bin/binary_macos",
-                        "to": "binary"
-                    },
-                    {
-                        "from": "bin/binary_windows.exe",
-                        "to": "binary.exe"
-                    }
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "Schoenbergerb\\Noscrape\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Schoenbergerb\\Noscrape\\Test\\": "test/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bernhard Schönberger",
-                    "email": "mail@schoenberger.be"
-                }
-            ],
-            "description": "Description of your package",
-            "time": "2024-05-26T18:59:12+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -7862,7 +7846,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "schoenbergerb/noscrape": 20
+        "noscrape/noscrape": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Schoenbergerb\Noscrape\Noscrape;
+use Noscrape\Noscrape\Noscrape;
 
 /*
 |--------------------------------------------------------------------------
